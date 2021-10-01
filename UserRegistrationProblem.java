@@ -9,6 +9,7 @@ public class UserRegistrationProblem {
        String lastName;
        String email;
        String mobile;
+       String passWord;
       
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -24,7 +25,10 @@ public class UserRegistrationProblem {
 		check(user.email,"^[a-z.]+[@][a-z.]+[.][a-z]{2,3}$");
 		System.out.println("Enter Mobile Number :");
 		user.mobile = scanner.next();
-		check(user.mobile,"^[1-9]{2}[1-9]{1}[0-9]{9}");
+		check(user.mobile,"^[1-9]{2}[1-9]{1}[0-9]{9}$");
+		System.out.println("Enter PassWord:");
+		user.passWord = scanner.next();
+		check(user.passWord,"^[A-Za-z]{8,}$");
 		
 
 	}
