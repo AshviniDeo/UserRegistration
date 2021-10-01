@@ -28,7 +28,7 @@ public class UserRegistrationProblem {
 		check(user.mobile,"^[1-9]{2}[1-9]{1}[0-9]{9}$");
 		System.out.println("Enter PassWord:");
 		user.passWord = scanner.next();
-		check(user.passWord,"^[A-Za-z]{8,}$");
+		check(user.passWord,"^[A-Z]{1}[a-z]{7,}$");
 		
 
 	}
