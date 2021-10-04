@@ -17,4 +17,16 @@ public class MoodAnalysis {
 		}
 		Assert.assertEquals("SAD", mood);
 	}
+	
+	@Test
+	public void test2(){
+		String mood = null;
+		try {
+			mood = MoodAnalyser.analyseMood("I am in a happy mood");
+		} catch (MoodAnalysisException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Assert.assertEquals("HAPPY", mood);
+	}
 }
